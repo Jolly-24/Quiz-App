@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="icon" href="1_FBRsnCP9wE84UVW1Kkv5Yw.jpg">
+         <!-- ?========> Font Awesome -->
+         <link rel="stylesheet" href="css/all.min.css" />
+         <!-- ?========> Bootstrap -->
+         <link rel="stylesheet" href="css/bootstrap.min.css" />
+         <!-- ?========> Main Style Sheet -->
+         <link rel="stylesheet" href="css/main.css" />
+
+         <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+       />
+</head>
+<body>
+<main class="w-100 pt-5 ">
+    <div class="container so2al d-flex align-items-center justify-content-center flex-column  pt-5 ">
+        <div class="header p-1 d-inline-block rounded-2 position-relative ">
+            <div class="animate position-absolute rotating"></div>
+            <h1 class="text-center p-3 mb-0 rounded-2">Quiz App</h1>
+        </div>
+        <div class="form w-100 d-flex align-items-center justify-content-center flex-column gap-3 mt-3" id="questionsContainer">
+            <div class="form-floating w-100">
+                <select class="form-select" id="selectCategory" aria-label="Floating label select example">
+                  <option selected>Category</option>
+                  <option value="23">History</option>
+                  <option value="22">Geography</option>
+                  <option value="11">Entertainment: Film</option> 
+                  <option value="11">Entertainment: Film</option> 
+                  <option value="19">Science: Mathematics</option> 
+                  <option value="18">Science: Computers</option> 
+                  <option value="9">General Knowledge</option> 
+                </select>
+                <label for="floatingSelect">Works with selects</label>
+              </div>
+              <div class="form-floating w-100">
+                <select class="form-select" id="difficultyOptions" aria-label="Floating label select example">
+                  <option selected value="easy">Easy</option>
+                  <option value="medium">Medium</option>
+                  <option value="hard">Hard</option>
+                </select>
+                <label for="floatingSelect">Works with selects</label>
+              </div>
+              <div class="form-floating mb-3 w-100">
+                <input type="number" class="form-control" id="questionsNumber" placeholder="name@example.com">
+                <label for="floatingInput">Number of Questions</label>
+              </div>
+              <button type="button" class="w-25 py-2 rounded-3 fs-4" id="start"><i class="fa-solid fa-angles-right"></i> Start</button>
+        </div>
+    </div>
+    <div class="questions">
+      <div class="container">
+        <div class="row mt-5 column-gap-3" id="row">
+          
+        </div>
+      </div>
+    </div>
+</main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
